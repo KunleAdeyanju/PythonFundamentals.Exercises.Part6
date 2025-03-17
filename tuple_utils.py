@@ -40,8 +40,10 @@ def print_indexes_and_entries(indexes: Iterable, entries: Iterable) -> None:
     :param entries: A list or tuple
     :return: None
     """
-    pass  # remove pass statement and implement me
-    print
+    #pass  # remove pass statement and implement me
+    # print
+    for index, entry in zip(indexes, entries):
+        print(f"Index: {index}\tEntry: {entry}")
 
 def print_items_with_index(items: Iterable):
     """
@@ -53,4 +55,7 @@ def print_items_with_index(items: Iterable):
     :return: None
     """
     pass  # remove pass statement and implement me
+    # use enumerate
+    for i, item in enumerate(items):
+        print(f"{i+1}: {item}")
 

@@ -49,9 +49,9 @@ class TupleUtilsTest(unittest.TestCase):
         entries = ('Burglar', 'Leader', 'Wizard')
         tuple_utils.print_indexes_and_entries(indexes, entries)
 
-        expected = "Index: Bilbo      Entry: Burglar\n" \
-                   "Index: Thorin     Entry: Leader\n" \
-                   "Index: Gandalf    Entry: Wizard\n"
+        expected = "Index: Bilbo    Entry: Burglar\n" \
+                   "Index: Thorin   Entry: Leader\n" \
+                   "Index: Gandalf  Entry: Wizard\n"
         self.assertEqual(expected, mock_stdout.getvalue())
 
     @unittest.mock.patch('sys.stdout', new_callable=StringIO)
